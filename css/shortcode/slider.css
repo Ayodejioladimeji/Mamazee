@@ -1,0 +1,248 @@
+
+
+/*
+Developed by LayoBright
+*/
+
+
+.slider__bg--1 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/1.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--2 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/2.jpg") no-repeat scroll 0 0 / cover ;
+}
+
+
+/*-----------------------------------------
+  Background variation Content
+-------------------------------------------*/
+
+
+
+/*-----------------------------------------
+  Slider One
+  The section of the slide one
+-------------------------------------------*/
+.slide{
+  height: 100%;
+}
+.slider {
+  height: 100vh;
+}
+
+
+/*The section of the slider fixed height*/
+.slider__fixed--height {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background:orangered;
+}
+
+
+.slider--one .slide {
+    align-items: center;
+    display: flex;
+}
+
+
+
+/*The section of the slider h2*/
+.slider__inner h2 {
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-shadow:2px 2px #151c58;
+    font-weight:bold;
+}
+
+/*The section of the slider h1*/
+.slider__inner h1 {
+    color: #151c58;
+    font-family: monospace;
+    font-size: 60px;
+    margin-bottom: 14px;
+    margin-top: 31px;
+    text-transform: uppercase;
+    text-shadow:2px 2px #ffffff;
+    font-weight:bold;
+}
+
+
+/*The section of the slider button*/
+.cr__btn a {
+    color: #fff;
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 49px;
+    padding:0 36px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    background:#151c58;
+}
+
+
+.cr__btn a:hover {
+    background:#eb3007d9;
+    color: #fff;
+    border-radius:25px;
+    margin-left:10px;
+    border:1px solid #151c58;
+}
+
+
+.slide__thumb {
+    text-align: right;
+}
+
+
+/*The section of the slider div center*/
+.align-items__center{
+    display: flex;
+    justify-content: center;
+    margin-top:-100px;
+}
+
+
+/*Slider Style Two*/
+
+.slider--two .slide {
+  text-align: center;
+}
+
+
+
+
+/*----------------------
+  Animation
+-------------------------*/
+
+.slider__activation__wrap{
+    position: relative;
+}
+
+
+/*The section of the slider navigation icon*/
+.slider__activation__wrap .owl-nav div {
+    /*background: #c43b68 none repeat scroll 0 0;*/
+    border-radius: 100%;
+    color: #fff;
+    font-size: 17px;
+    height: 50px;
+    left: 0;
+    line-height: 53px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transition: all 0.5s ease 0s;
+    width: 50px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background:#eb3007d9;
+}
+
+
+/*The section of the animation owl carousel*/
+.slider__activation__wrap .owl-nav div.owl-next {
+    left: auto;
+    right: 0;
+}
+.slider__activation__wrap:hover .owl-nav div {
+    opacity: 1;
+}
+
+.owl-item.active .single__slide.animation__style01 h2{
+  -webkit-animation: 800ms ease-in-out 0s normal none 1 running bounceInDown;
+          animation: 800ms ease-in-out 0s normal none 1 running bounceInDown;
+} 
+.owl-item.active .single__slide.animation__style01 h1{
+  -webkit-animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
+          animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
+} 
+
+.owl-item.active .single__slide.animation__style01 .cr__btn{
+  -webkit-animation: 1600ms ease-in-out 0s normal none 1 running bounceInDown;
+          animation: 1600ms ease-in-out 0s normal none 1 running bounceInDown;
+} 
+
+
+.owl-item.active .single__slide.animation__style01 p{
+  -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
+          animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
+} 
+
+.owl-item.active .single__slide.animation__style01 .slide__thumb{
+    -webkit-animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
+            animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
+} 
+
+
+/*The section of the shop background image animation*/
+.shop{
+    background:url("");
+}
+
+
+/*---------------------
+  cd-headline
+------------------------*/
+
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #4c8bf5 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease -0.1s;
+  width: 0;
+  z-index: 2;
+}
+.cd-headline.loading-bar span {
+  display: inline-block;
+  padding: 0;
+}
+.theme-color span.cd-words-wrapper b{
+ color: #4c8bf5;
+}
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #4c8bf5 none repeat scroll 0 0;
+}
+
+
+
+
+/* Slider Activation */
+.slider__activation__wrap .col-md-4 {
+  width: 100% !important;
+}
+
+
+.arrow-down-long{
+  position: relative;
+}
+
+
+.arrow-down-long:before {
+    content: "";
+    height: 90px;
+    background: url(../../images/icons/arrow-down-long.png);
+    width: 15px;
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.slider__activation__wrap--5 .single-slide{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.slider__activation__wrap--5 .single-slide:focus{
+  outline: none;}
+}
