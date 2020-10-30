@@ -1,0 +1,10 @@
+
+/* The section of the media query */
+@media screen and (max-width:1171px) and (min-width:900px){
+
+    /* The slider h1 */
+    .slider__fixed--height {
+        /* background:blue;
+        height:600px; */
+    }
+}

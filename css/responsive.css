@@ -156,8 +156,10 @@
 .ht__promo__details h4 {
   font-size: 35px;
 }
+
+/* The section of the slider fixed height */
 .slider__fixed--height {
-  height: auto;
+  height: 100vh;
   padding: 100px 0;
 }
 .ht__good__sale__hover {
@@ -172,6 +174,7 @@
 .slider--3 .slider {
   padding-right: 30px;
 }
+
 .arrow-down-long::before {
   top: 0;
 }
@@ -217,11 +220,11 @@
   margin-top: 10px;
 }    
 .slider--5 .slider__inner h1 {
-  font-size: 50px;
+  font-size: 10px;
 }    
-.slider--5 .slider__fixed--height {
-  height: 400px;
-}    
+/* .slider--5 .slider__fixed--height {
+  /* height: 400px; */
+}     */
 .testimonial__area.testimonial--2 {
   padding: 60px 20px 115px 15px;
 }    
@@ -239,8 +242,10 @@ nav.off__canvars--menu ul li {
 .main__menu li.drop ul.dropdown.mega_dropdown {
   left: 100%;
 }    
+
+/* The section of the slide inner h1 */
 .slider__inner h1 {
-  font-size: 77px;
+  font-size: 50px;
 } 
 .pointer__tooltip.pointer--6 {
   left: 57%;
@@ -568,6 +573,7 @@ nav.off__canvars--menu ul li {
 .slider__inner h1 {
   font-size: 58px;
 }
+
 .pointer__tooltip.pointer--6 ,
 .pointer__tooltip.pointer--7 {
   display: none;
@@ -843,14 +849,28 @@ nav.off__canvars--menu ul li {
 .htc__promo__text {
   padding-left: 0;
 }
+
+/* The section of the slider fixed height */
 .slider__fixed--height {
   height: auto;
   padding: 100px 0;
 }
+
+/* The section of the slider inner */
+.slider__inner{
+  line-height:100px;
+}
+
+/* The section of the slider inner h1 */
 .slider__inner h1 {
   font-size: 40px;
   margin-bottom: 8px;
   margin-top: 21px;
+}
+
+/* The section of the slider inner h2 */
+.slider__inner h2{
+  margin-top:50px;
 }
 
 .activation__style--1.owl-theme .owl-nav {
@@ -1216,8 +1236,11 @@ nav.off__canvars--menu ul li {
 .align-items__center {
   display: block;
 }
+
+/* The section of the slider thumb */
 .slide__thumb {
-  margin-top: 27px;
+  margin-top: 7px;
+  padding:10px 100px 50px 100px;
 }
 .htc__good__sale .row {
   display: block;
@@ -1285,12 +1308,151 @@ nav.off__canvars--menu ul li {
   .address__details {
     padding: 25.5px 5px 17.5px 13px;
   }
+}
 
 
 
+/* The section of the media query for 425px */
+@media screen and (max-width:425px){
+
+  .zee h3{
+    font-size:15px;
+  }
+
+  .logo{
+    width:150%;
+  }
+
+  .search_logo{
+    display:none;
+  }
+
+  .search__div .search__inner input[type=text]{
+    background:blue;
+  }
+
+  .slider__inner{
+    line-height:30px;
+  }
+
+  .slider__inner h2{
+    margin-top:0px;
+    font-size:15px;
+  }
+
+  .slider__inner h1{
+    font-size:35px;
+  }
+
+  .cr__btn a{
+    padding:0 15px;
+    font-size:13px;
+  }
+
+  .slide__thumb{
+    padding:20px;
+  }
+
+  .underline{
+    width:40%;
+  }
+
+  .section__title--2 .title__line{
+    font-size:20px;
+  }
+
+  .send__btn .fr__btn{
+    padding:0 15px;
+    font-size:13px;
+  }
+
+  .copyright__inner p{
+    font-size:13px;
+  }
+
+  .copyright__inner a{
+    font-size:11px;
+  }
+}
+
+
+
+/* The section of the 291px */
+@media screen and (max-width:291px){
+  .header__right{
+    display:none;
+  }
 }
 
 
 
 
+/* ================================== */
+/* ================================== */
 
+/* ================================== */
+/* The section of the login */
+@media screen and (max-width:767px) and (min-width:426px){
+
+  #login__fixed__height{
+    height:170vh;
+  }
+
+  .login__slider{
+    line-height:50px;
+  }
+
+  .contact-title.log .title__line--6{
+    margin-top:-50px;
+  }
+
+
+  .contact-box.name{
+    /* background:yellow; */
+    line-height:80px;
+    padding:0 10px;
+  }
+
+
+  .name input{
+    padding:0 10px;
+    height:50px;
+  }
+
+  .thumb__login{
+    margin-top:20px;
+  }
+
+  .thumb__login h3{
+    font-size:15px;
+  }
+
+  .search_logo{
+    display:none;
+  }
+
+}
+
+/* The section of the login */
+@media screen and (max-width:425px){
+  #login__fixed__height{
+    height:60rem;
+  }
+
+  .name input{
+    padding:0 10px;
+    height:50px;
+  }
+
+  .thumb__login{
+    margin-top:20px;
+  }
+
+  .thumb__login h3{
+    font-size:15px;
+  }
+
+  .search_logo{
+    display:none;
+  }
+}
